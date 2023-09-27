@@ -1,24 +1,24 @@
 #!/bin/bash
 
-export PACKAGE_NAME="api-geteway"
+export PACKAGE_NAME="api-gateway"
 import "$ZMICRO_PACKAGES_PATH/$PACKAGE_NAME/config"
 import "$ZMICRO_PACKAGES_PATH/$PACKAGE_NAME/core"
 
 help() {
   echo "Usage:"
-  echo "  zmicro api-geteway <args ...>"
+  echo "  zmicro api-gateway <args ...>"
   echo ""
 
-  api-geteway --help
+  api-gateway --help
 }
 
 version() {
-  api-geteway --version
+  api-gateway --version
 }
 
 core() {
   # context directory
-  local context="$ZMICRO_PACKAGES_DATA_PATH/api-geteway"
+  local context="$ZMICRO_PACKAGES_DATA_PATH/api-gateway"
   if [ ! -d "$context" ]; then
     mkdir -p $context
   fi
@@ -33,7 +33,7 @@ core() {
     version
     ;;
   *)
-    api-geteway "$@"
+    api-gateway "$@"
     ;;
   esac
 }

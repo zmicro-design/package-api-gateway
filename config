@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PACKAGE_CORE_NAME="api-geteway"
+export PACKAGE_CORE_NAME="api-gateway"
 export PACKAGE_CORE_ORG="go-zoox"
 export PACKAGE_CORE_BIN_NAME="$PACKAGE_CORE_NAME"
 export PACKAGE_CORE_VERSION="v0.0.3"
